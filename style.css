@@ -1,0 +1,120 @@
+.main-div {  
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;       
+    justify-content: center;  
+    text-align: center;
+    min-height: 100vh;  
+    padding: 0 15px; 
+}
+
+.image-div {
+    height: 300px;             
+    width: auto;  
+    margin-top: 5%;             
+    max-width: 100%; 
+}
+
+.image-div:hover {
+    cursor: pointer;
+}
+
+.image-div img {
+    max-width: 100%; 
+    height: auto;               
+    object-fit: cover;        
+}
+
+.title {
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin: 5px 0;  
+    color: #333;      
+}
+
+.video-div {
+    width: 100%; 
+    max-width: 1080px; 
+    overflow: hidden;
+    margin-top: 1%;
+    align-self: flex-start; 
+    
+}
+
+.video-div iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    border: 10px solid rgb(26, 60, 59);
+}
+.sign{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+@media (max-width: 768px) {
+    .image-div {
+        height: 220px;         
+    }
+
+    .title {
+        font-size: 25px;       
+    }
+
+    .video-div {
+        margin-top: 1%; 
+        max-width: 600px; 
+    }
+
+    .video-div iframe {
+        width: 100%;
+        height: auto;
+    }
+    .main-div {  
+        min-height: 50vh;  
+    }
+}
+
+@media (max-width: 480px) {
+    .image-div {
+        height: 180px;         
+    }
+
+    .title {
+        font-size: 20px;       
+        margin-top: 5%;  
+    }
+
+    .video-div {
+        margin-top: 1%; 
+        max-width: 200px;
+    }
+
+    .video-div iframe {
+        width: 100%;
+        height: auto;
+    }
+    .main-div {  
+        min-height: 50vh;  
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .image-div {
+        height: 250px; 
+    }
+
+    .title {
+        font-size: 28px;       
+    }
+
+    .video-div {
+        margin-top: 10%; 
+        max-width: 600px; 
+    }
+
+    .video-div iframe {
+        width: 100%;
+        height: auto;
+    }
+}
